@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Calculator</title>
+</head>
+<body>
+<script src="jsfunctions.js"></script>
+<center>
+    <form name="calc">
+    <input type="text" name="result" size="30px" readonly>
+    </form>
+<table>
+ <tr>
+    <td><button type="button" id="7" onclick="Fun(this.id)">7</button></td> 
+    <td><button type="button" id="8" onclick="Fun(this.id)">8</button></td>
+    <td><button type="button" id="9" onclick="Fun(this.id)">9</button></td> 
+  </tr>
+  <tr>
+    <td><button type="button" id="4" onclick="Fun(this.id)">4</button></td> 
+    <td><button type="button" id="5" onclick="Fun(this.id)">5</button></td> 
+    <td><button type="button" id="6" onclick="Fun(this.id)">6</button></td> 
+  </tr>
+ <tr>
+    <td><button type="button" id="1" onclick="Fun(this.id)">1</button></td> 
+    <td><button type="button" id="2" onclick="Fun(this.id)">2</button></td> 
+    <td><button type="button" id="3" onclick="Fun(this.id)">3</button></td> 
+  </tr>
+  <tr>
+    <td><button type="button" id="0" onclick="Fun(this.id)">0</button></td> 
+    <td><button type="button" id="+" onclick="Fun(this.id)">+</button></td> 
+    <td><button type="button" id="-" onclick="Fun(this.id)">-</button></td>  
+  </tr>
+  <tr>
+    <td><button type="button" id="*" onclick="Fun(this.id)">x</button></td> 
+    <td><button type="button" id="/" onclick="Fun(this.id)">/</button></td>
+    <td><button type="button" id="ANS" onclick="compute()">=</button></td> 
+  </tr>
+</table>
+
+<td><button type="button" id="CLEAR" onclick="Clearfun()">c</button></td> 
+<td><button type="button" id="%" onclick="Fun(this.id)">%</button></td>
+<td><button type="button" id="abs" onclick="absolute()">abs</button></td>
+<td><button type="button" id="SQRT" onclick="squareroot()">&#8730</button></td>
+
+
+</center>
+</body>
+</html>
